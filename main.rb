@@ -100,7 +100,7 @@ morse_decode = {
   '----.' => '9',
   '----- ' => '0',
   '_' => ' ',
-  '/'=>' '
+  '/' => ' '
 }
 
 morse_obj = Morse.new(morse_code, morse_decode)
