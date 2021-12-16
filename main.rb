@@ -99,15 +99,16 @@ morse_decode = {
   '---..' => '8',
   '----.' => '9',
   '----- ' => '0',
-  '_' => ' '
+  '_' => ' ',
+  '/'=>' '
 }
 
 morse_obj = Morse.new(morse_code, morse_decode)
 
 sentence = 'my name is robert'
-
+crypted_massage = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...'
 text_coded = morse_obj.coding(sentence)
-text_decoded = morse_obj.decoding(text_coded)
+text_decoded = morse_obj.decoding(crypted_massage)
 
 puts text_coded
 puts text_decoded
