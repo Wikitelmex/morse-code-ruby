@@ -18,7 +18,7 @@ class Morse
     sentence_coded.split.each do |letter|
       sentence_decoded += @morse_decode[letter]
     end
-    sentence_decoded
+    sentence_decoded.upcase
   end
 end
 morse_code = {
