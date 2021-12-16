@@ -6,7 +6,7 @@ class Morse
 
   def coding(sentence)
     sentence_coded = ''
-    sentence.chars.each do |letter|
+    sentence.downcase.chars.each do |letter|
       sentence_coded = "#{sentence_coded}#{@morse_code[letter]} "
     end
     sentence_coded
@@ -105,7 +105,7 @@ morse_decode = {
 
 morse_obj = Morse.new(morse_code, morse_decode)
 
-sentence = 'my name is robert'
+sentence = 'my name IS Robert'
 crypted_massage = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...'
 text_coded = morse_obj.coding(sentence)
 text_decoded = morse_obj.decoding(crypted_massage)
