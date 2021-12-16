@@ -9,7 +9,7 @@ class Morse
     sentence.chars.each do |letter|
       sentence_coded = "#{sentence_coded}#{@morse_code[letter]} "
     end
-    return sentence_coded
+    sentence_coded
   end
 
   def decoding(sentence_coded)
@@ -18,7 +18,7 @@ class Morse
     sentence_coded.split.each do |letter|
       sentence_decoded += @morse_decode[letter]
     end
-    return sentence_decoded
+    sentence_decoded
   end
 end
 morse_code = {
